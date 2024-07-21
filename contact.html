@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <a href="../Day 1/index.html" class="a"><img class="logo" src="assets/foto/dumbways.png" alt=""></a>
+            <li><a href="../Day 2/index.html" class="a">Home</a></li>
+            <li><a href="../Day 4/blog.html">My project</a></li>
+        </ul>
+        <div class="right">
+            <button class="kontak">
+                <a href="">Contact Me</a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container-f">
+        <header>GET IN TOUCH</header>
+
+
+        <form class="form" onsubmit="getData(event)">
+            <div class="input-box">
+                <label for="nama">Nama</label>
+                <input id="nama" type="text" placeholder="Masukkan nama anda">
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Masukkan email anda">
+            </div>
+            <div class="input-box">
+                <label for="nomortelpon">Phone Number</label>
+                <input id="nomortelpon" type="number" placeholder="Masukkan Nomor Telpon anda">
+            </div>
+            <div class="kolom">
+                <div class="select-box">
+                    <label for="subject">Subject</label>
+                    <select name="" id="subject">
+                        <option hidden></option>
+                        <option>Web Programmer</option>
+                        <option>Front End Developer</option>
+                        <option>Backend Developer</option>
+                    </select>
+                </div>
+
+                <div class="area-box">
+
+                    <label for="pesan">Your Message</label>
+                    <textarea name="" id="pesan">
+
+                    </textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="tombol">submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

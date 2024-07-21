@@ -1,20 +1,17 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-size: 16px;
-    font-weight: 32px;
-    background-color: rgb(159, 168, 168);
-    height: 1000px;
+    font-family: sans-serif;
+    background-color: rgb(164, 170, 170);
 }
-
 
 nav {
     display: flex;
-    background-color: rgb(212, 221, 221);
     justify-content: space-between;
+    background-color: rgb(212, 221, 221);
     padding: 20px 100px;
     color: black;
 
@@ -23,24 +20,13 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 20%;
-    justify-content: space-between;
-    font-size: 20px;
+    width: 50%;
+    justify-content: space-around;
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
-}
-
-
-.logo {
-    width: 45px;
-    padding-right: 10px;
-}
-
-nav img {
-    font-size: 40px;
 }
 
 .a {
@@ -59,65 +45,130 @@ nav img {
     font-size: 14px;
 }
 
+.logo {
+    width: 30px;
+    padding-right: 10px;
+}
 
 .container {
-    width: 800px;
-    background-color: rgb(245, 238, 238);
-    margin: 20px auto;
-    padding: 30px;
+    background-color: rgb(164, 170, 170);
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
 }
 
-.container h2 {
-    margin-top: 5px;
+.kolom-utama h2 {
+    margin-top: 30px;
     padding: 20px;
 }
 
-.container p {
+.kolom-utama p {
     margin-top: -15px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     line-height: 25px;
 }
 
-button {
+
+.kolom-utama button {
     background-color: black;
-    color: white;
-    font-size: 18px;
-    padding: 5px 30px;
+    padding: 2px 30px;
     border-radius: 20px;
 }
 
-button a {
+.kolom-utama button a {
     color: white;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.kolom-utama .cv {
+    display: inline;
 }
 
 .icon {
-    margin-left: 10px;
-    padding: 10px;
-    text-align: center;
+    padding: 50px 10px;
     font-size: 30px;
-    margin-bottom: 20px;
-
 }
 
 .icon a {
+    padding-left: 15px;
     color: black;
-    padding: 0 5px;
+    text-decoration: none;
 }
 
-.card {
-    width: 70%;
-    margin: auto;
+.kolom-kedua {
+    border: 0.2px rgb(71, 69, 69) solid;
+    box-shadow: 0 0 5px black;
+}
+
+.card-body {
     text-align: center;
 }
 
-.card img {
-    width: 70%;
-    margin: auto;
-    box-shadow: 0 0 15px rgb(175, 175, 175);
+
+
+.container-f {
+    max-width: 700px;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 25px;
+    margin: 20px auto;
+    border: 8px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+
 }
 
-.sub {
-    margin-top: -18px;
+.container-f header {
+    font-size: 40px;
+    font-weight: 550px;
+    text-align: center;
+}
+
+.container-f .form {
+    margin-top: 20px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.tombol {
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.kontak {
+    cursor: pointer;
+}
+
+
+@media(min-width: 600px) {
+    .nav {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 23%;
+        justify-content: space-around;
+    }
 }
