@@ -1,15 +1,12 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-size: 16px;
-    font-weight: 32px;
-    background-color: rgb(159, 168, 168);
-    height: 1000px;
+    font-family: sans-serif;
+    background-color: rgb(164, 170, 170);
 }
-
 
 nav {
     display: flex;
@@ -25,22 +22,11 @@ nav ul {
     list-style: none;
     width: 20%;
     justify-content: space-between;
-    font-size: 20px;
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
-}
-
-
-.logo {
-    width: 45px;
-    padding-right: 10px;
-}
-
-nav img {
-    font-size: 40px;
 }
 
 .a {
@@ -60,64 +46,70 @@ nav img {
 }
 
 
-.container {
-    width: 800px;
-    background-color: rgb(245, 238, 238);
-    margin: 20px auto;
-    padding: 30px;
+.container-satu {
+    background-color: aliceblue;
+    width: 1200px;
+    display: flex;
+    margin: 40px auto;
 }
 
-.container h2 {
-    margin-top: 5px;
+.kolom-utama h2 {
+    margin-top: 30px;
     padding: 20px;
 }
 
-.container p {
+.kolom-utama p {
     margin-top: -15px;
     padding: 20px;
     margin-bottom: 20px;
     line-height: 25px;
 }
 
-button {
+
+.kolom-utama button {
     background-color: black;
-    color: white;
-    font-size: 18px;
-    padding: 5px 30px;
+    padding: 2px 30px;
     border-radius: 20px;
+    margin-left: 20px;
 }
 
-button a {
+.kolom-utama button a {
     color: white;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.kolom-utama .cv {
+    display: inline;
 }
 
 .icon {
-    margin-left: 10px;
-    padding: 10px;
-    text-align: center;
+    padding: 50px 30px;
     font-size: 30px;
-    margin-bottom: 20px;
-
 }
 
 .icon a {
+    padding-left: 15px;
     color: black;
-    padding: 0 5px;
+    text-decoration: none;
 }
 
-.card {
-    width: 70%;
-    margin: auto;
+.kolom-kedua {
+    margin: 10px;
+}
+
+.kolom-kedua img {
+    box-shadow: 0px 0px 30px grey;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+.card-body {
     text-align: center;
 }
 
-.card img {
-    width: 70%;
-    margin: auto;
-    box-shadow: 0 0 15px rgb(175, 175, 175);
-}
 
-.sub {
-    margin-top: -18px;
+.logo {
+    width: 30px;
+    padding-right: 10px;
 }
