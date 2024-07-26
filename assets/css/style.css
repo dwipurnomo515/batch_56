@@ -8,55 +8,12 @@ body {
     font-weight: 32px;
     background-color: rgb(159, 168, 168);
     height: 1000px;
+    overflow-x: hidden;
 }
 
-
-nav {
-    display: flex;
-    background-color: rgb(212, 221, 221);
-    justify-content: space-between;
-    padding: 20px 100px;
-    color: black;
-
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    width: 20%;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-
-.logo {
-    width: 45px;
-    padding-right: 10px;
-}
-
-nav img {
-    font-size: 40px;
-}
 
 .a {
     font-weight: 600;
-}
-
-.right button {
-    background-color: black;
-    padding: 3px 25px;
-    border-radius: 10px;
-}
-
-.right button a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 
@@ -121,3 +78,11 @@ button a {
 .sub {
     margin-top: -18px;
 }
+
+
+
+/* @media screen and (min-width : 768px) {
+    nav {
+        max-width: 100%;
+    }
+} */
