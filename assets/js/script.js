@@ -72,7 +72,7 @@ function renderBlog() {
          <div class="card">
             <img src="assets/foto/b.jpg" alt="">
                 <div class="card-content">
-                    <h2><a href="">${dataBlog[i].title}</a></h2>
+                    <h2><a href="/blog-detail">${dataBlog[i].title}</a></h2>
                     <h5> dimulai pada ${dataBlog[i].start_date} selesai pada ${dataBlog[i].end_date} </h5>
                     <p>${dataBlog[i].content}</p>
                 </div>

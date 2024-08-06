@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Creating Blog Page - detail</title>
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="/index" class="a"><img class="logo" src="/assets/foto/dumbways.png" alt=""></a>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/blog" class="a">My project</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+        </ul>
+
+        <div class="right">
+            <button>
+                <a href="/contact">Contact Me</a>
+            </button>
+            <span class="burger">
+                <i class="fa-solid fa-bars"></i>
+
+            </span>
+        </div>
+
+    </nav>
+
+
+    <div class="burger-menu">
+
+        <a href="/home" class="a">Home</a>
+        <a href="/blog">My project</a>
+        <a href="/contact">Contact Me</a>
+        <a href="/testimonials">Testimonials</a>
+
+    </div>
+
+    <div class="blog-detail">
+        <div class="blog-detail-container">
+            <h1>{{data.title}} </h1>
+            <div class="author">{{data.start}} | {{data.author}}</div>
+            <img src="assets/foto/a.jpg" alt="detail" />
+            <p>
+                {{data.content}}
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

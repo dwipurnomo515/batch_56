@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  },
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Ini adalah project saya",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon index.js"
+  },
+  "author": "Dwi Purnomo",
+  "license": "ISC"
+}

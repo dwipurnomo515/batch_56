@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <script src="https://kit.fontawesome.com/ac0ee3f720.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="index.html" class="a"><img class="logo" src="assets/foto/dumbways.png" alt=""></a>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">My project</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <div class="right">
+            <button>
+                <a href="contact.html " class="a">Contact Me</a>
+            </button>
+            <span class="burger">
+                <i class="fa-solid fa-bars"></i>
+
+            </span>
+        </div>
+
+    </nav>
+
+
+    <div class="burger-menu">
+        <a href="home.html" class="a">Home</a>
+        <a href="blog.html">My project</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="testimonials.html">Testimonials</a>
+
+
+    </div>
+    <div class="container-f">
+        <header>GET IN TOUCH</header>
+
+
+        <form class="form" onsubmit="getData(event)">
+            <div class="input-box">
+                <label for="nama">Nama</label>
+                <input id="nama" type="text" placeholder="Masukkan nama anda" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Masukkan email anda" required>
+            </div>
+            <div class="input-box">
+                <label for="nomortelpon">Phone Number</label>
+                <input id="nomortelpon" type="number" placeholder="Masukkan Nomor Telpon anda" required>
+            </div>
+            <div class="kolom">
+                <div class="select-box">
+                    <label for="subject">Subject</label>
+                    <select name="" id="subject">
+                        <option hidden></option>
+                        <option>Web Programmer</option>
+                        <option>Front End Developer</option>
+                        <option>Backend Developer</option>
+                    </select>
+                </div>
+
+                <div class="area-box">
+
+                    <label for="pesan">Your Message</label>
+                    <textarea name="" id="pesan">
+
+                    </textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="tombol">submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>

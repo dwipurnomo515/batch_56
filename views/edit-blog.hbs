@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <script src="https://kit.fontawesome.com/ac0ee3f720.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="/index" class="a"><img class="logo" src="/assets/foto/dumbways.png" alt=""></a>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/blog" class="a">My project</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+        </ul>
+
+        <div class="right">
+            <button>
+                <a href="/contact">Contact Me</a>
+            </button>
+            <span class="burger">
+                <i class="fa-solid fa-bars"></i>
+
+            </span>
+        </div>
+
+    </nav>
+
+
+    <div class="burger-menu">
+
+        <a href="/home" class="a">Home</a>
+        <a href="/blog">My project</a>
+        <a href="/contact">Contact Me</a>
+        <a href="/testimonials">Testimonials</a>
+
+    </div>
+    <div class="container">
+        <h2>Update My Blog</h2>
+
+        <form action="/edit-blog/{{data.id}}" method="post">
+
+            <div class="input-box">
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" name="title" value="{{data.title}}">
+            </div>
+            <div class="kolom">
+
+                <div class="input-box">
+                    <label for="start">Start Date</label>
+                    <input type="date" id="start" name="start" value="{{data.start}}">
+                </div>
+
+                <div class="input-box">
+                    <label for="end">End Date</label>
+                    <input type="date" id="end" name="end" value="{{data.end}}">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="deskripsi">Description</label>
+                <textarea id="deskripsi" name="content">{{data.content}}</textarea>
+            </div>
+
+            <header>Tecnologies</header>
+            <div class="teknologi">
+                <div class="tekno-satu">
+                    <label for="nodejs">Node Js</label>
+                    <input type="radio" id="nodejs" name="teknolgi" value="NodeJs">
+                    <label for="reactjs">React Js</label>
+                    <input type="radio" id="reactjs" name="teknolgi" value="ReactJs">
+                </div>
+
+                <div class="tekno-dua">
+                    <label for="nextjs">Next Js</label>
+                    <input type="radio" id="nextjs" name="teknolgi">
+                    <label for="typescript">Type Text
+                        <input type="radio" id="typescript" name="teknolgi">
+                    </label>
+
+                </div>
+            </div>
+
+            <div>
+                <label>Upload Image</label>
+                <div class="input-blog-image-group">
+                    <label for="input-blog-image">
+                        <p
+                            style="border: 1px black solid; width: 20%; padding: 5px; text-align: center; box-shadow: 0px 0px 5px grey;">
+                            Choose</p>
+                        <img src="assets/foto/attach.png" style="width: 30px; float: right; margin-top: -33px; " alt="">
+                    </label>
+                    <input type="file" id="input-blog-image" hidden />
+                </div>
+            </div>
+
+            <button>Submit</button>
+
+
+
+    </div>
+    </form>
+
+    </div>
+
+
+
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
